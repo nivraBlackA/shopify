@@ -1,0 +1,271 @@
+.side_badge{
+    position: absolute;
+    right : 20px;
+}
+
+.table_fixed_column td, .table_fixed_column th{
+    white-space : normal;
+}
+
+#bae_alert{
+    position: absolute;
+    width: 90%;
+    margin-top : 6%;
+    margin-left : 5%;
+    z-index : 5;
+    color : #000;
+}
+
+#bae_alert div{
+    border-radius: 10px;
+}
+
+.nav-treeview{
+    display: none;
+    list-style: none;
+    padding : 0 !important;
+    background: #FFF5F5;
+}
+
+.nav-treeview .nav-item{
+    /* display: none; */
+    width : 100%;
+}
+
+.nav-treeview .nav-item .nav-link{
+    padding-left : 2em !important;
+}
+
+/* datatable override */
+
+.dataTables_wrapper .row:first-child{
+    padding : 10px;
+}
+.dataTables_wrapper .row:last-child{
+    padding :10px;
+}
+
+.table, .table th, .table td{
+    font-size: 0.84em !important
+}
+
+.height-500{
+    max-height: 500px;
+}
+
+.height-300{
+    max-height: 300px;
+}
+
+.main_search_box_result{
+    /* position: absolute;
+    z-index: 5;
+    margin-top : 35px; */
+    display: block;
+    width: 100%;
+    border-radius:  0 0 1.8rem 1.8rem;
+    background: rgba(255,255,255,0.9);
+    color : #000;
+    max-height: 300px;
+    font-size: 0.8em;
+}
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: #A00;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #FFF;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+
+/* Tracking List */
+
+
+.tracking-detail {
+    padding:3rem 0
+   }
+   #tracking {
+    /* margin-bottom:1rem */
+   }
+   [class*=tracking-status-] p {
+    margin:0;
+    font-size:1.1rem;
+    color:#fff;
+    text-transform:uppercase;
+    text-align:center
+   }
+   [class*=tracking-status-] {
+    padding:1.6rem 0
+   }
+   .tracking-status-intransit {
+    background-color:#65aee0
+   }
+   .tracking-status-outfordelivery {
+    background-color:#f5a551
+   }
+   .tracking-status-deliveryoffice {
+    background-color:#f7dc6f
+   }
+   .tracking-status-delivered {
+    background-color:#4cbb87
+   }
+   .tracking-status-attemptfail {
+    background-color:#b789c7
+   }
+   .tracking-status-error,.tracking-status-exception {
+    background-color:#d26759
+   }
+   .tracking-status-expired {
+    background-color:#616e7d
+   }
+   .tracking-status-pending {
+    background-color:#ccc
+   }
+   .tracking-status-inforeceived {
+    background-color:#214977
+   }
+   .tracking-list {
+    /* border:1px solid #e5e5e5 */
+   }
+   .tracking-status-darkred {
+    background-color:#A00;
+   }
+   .tracking-item {
+    border-left:1px solid #e5e5e5;
+    position:relative;
+    padding:2rem 1.5rem .5rem 2.5rem;
+    font-size:.8rem;
+    margin-left:3rem;
+    min-height:5rem
+   }
+   .tracking-item:last-child {
+    padding-bottom:4rem
+   }
+   .tracking-item .tracking-date {
+    margin-bottom:.5rem
+   }
+   .tracking-item .tracking-date span {
+    color:#888;
+    font-size:85%;
+    padding-left:.4rem
+   }
+   .tracking-item .tracking-content {
+    padding:.5rem .8rem;
+    background-color:#f4f4f4;
+    border-radius:.5rem
+   }
+   .tracking-item .tracking-content span {
+    display:block;
+    color:#888;
+    font-size:85%
+   }
+   .tracking-item .tracking-icon {
+    line-height:2.6rem;
+    position:absolute;
+    left:-1.3rem;
+    width:2.6rem;
+    height:2.6rem;
+    text-align:center;
+    border-radius:50%;
+    font-size:1.1rem;
+    background-color:#fff;
+    color:#fff
+   }
+   .tracking-item .tracking-icon.track_bg_red {
+    background-color:#f68
+   }
+   .tracking-item .tracking-icon.track_bg_green {
+    background-color:#4cbb87
+   }
+   .tracking-item .tracking-icon.track_bg_orange {
+    background-color:#f5a551
+   }
+   .tracking-item .tracking-icon.track_bg_yellow {
+    background-color:#f7dc6f
+   }
+   .tracking-item .tracking-icon.status-attemptfail {
+    background-color:#b789c7
+   }
+   .tracking-item .tracking-icon.track_bg_darkred {
+    background-color:#A00;
+   }
+   .tracking-item .tracking-icon.track_bg_blue {
+    background-color:#214977
+   }
+   .tracking-item .tracking-icon.track_bg_gray {
+    /* color:#e5e5e5; */
+    border:1px solid #e5e5e5;
+   }
+   @media(min-width:992px) {
+    .tracking-item {
+     margin-left:10rem
+    }
+    .tracking-item .tracking-date {
+     position:absolute;
+     left:-10rem;
+     width:7.5rem;
+     text-align:right
+    }
+    .tracking-item .tracking-date span {
+     display:block
+    }
+    .tracking-item .tracking-content {
+     padding:0;
+     background-color:transparent
+    }
+   }
+
+.text-wrap{
+    white-space: normal;
+}
+
+.dataTables_wrapper .row:first-child{
+    padding : 0;
+}
+
+.dataTables_wrapper .row:last-child{
+    padding : 0;
+}
+
+.table.tab-content > .active {
+    display: contents;
+}
+
+.nav-small.nav-pills .nav-link{
+    padding: .25rem .75rem!important;
+    margin : 0 5px;
+    color : #f5365c;
+    font-size: .75rem;
+    font-weight: 700;
+}
+
+.nav-small.nav-pills .nav-link.active{
+    padding: .25rem .75rem!important;
+    margin : 0 5px;
+    color : #ffffff;
+    background-color : #f5365c;
+}

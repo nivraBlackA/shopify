@@ -1,0 +1,7 @@
+.iconinfo{
+    position: absolute !important;
+    overflow: hidden !important;
+    margin-left: -43px !important;
+    margin-top: 8px !important; 
+    cursor: pointer !important;
+}
