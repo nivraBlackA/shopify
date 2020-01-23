@@ -879,7 +879,8 @@ class MX_Model
         }
 
         return false;
-    }
+	}
+	
 
     public function get_array($table, $condition = "",$field = "",$group_by = "",$order_by = "",$limit = ""){
         $this->CI->db->select($field);

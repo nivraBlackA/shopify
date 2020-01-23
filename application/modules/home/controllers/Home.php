@@ -16,8 +16,15 @@ class Home extends MX_Controller {
     }
 
     function index(){
-    
-        $this->section['content'] = $this->load->view('home',$this->data,true);
+       
+        $this->data['count_orders']     = $this->xmod->get_count("spf_orders_done");
+        $this->data['count_install']    = $this->xmod->get_count("installs","","COUNT(DISTINCT store)");
+        $this->data['cod_amount']       = $this->xmod->get_count("spf_orders_done","","SUM(cod_amount)");
+        $this->data['count_user']       = $this->xmod->get_count("users","","COUNT(user_id)");
+        $this->section['content']       = $this->load->view('home',$this->data,true);
+
         $this->myview->view($this->section,$this->template);
     }
+
+
 }

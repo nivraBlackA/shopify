@@ -1,18 +1,21 @@
 <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
 	<div class="container-fluid align-items-start">
 		<!-- Brand -->
-		<a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="<?=base_url()?>">Dashboard</a>
+		<!-- <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="<?=base_url()?>">Dashboard</a> -->
+	
 		<!-- Form -->
-		<form method="GET" action="<?=base_url("search")?>" class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
-			<div class="form-group mb-0">
+		<form method="GET" action="<?=base_url("search")?>"
+			class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
+
+			<div class="form-group mb-0 ">
 				<div class="input-group input-group-alternative">
-                    <!-- <div class="d-flex"> -->
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-search"></i></span>
-                        </div>
-                        <input class="form-control" placeholder="Search" type="text" name="keyword" id="main_search_box">
-                    <!-- </div> -->
-                    <div class="main_search_box_result scrollbar-inner">
+					<!-- <div class="d-flex"> -->
+					<div class="input-group-prepend">
+						<span class="input-group-text"><i class="fas fa-search"></i></span>
+					</div>
+					<input class="form-control" placeholder="Search" type="text" name="keyword" id="main_search_box">
+					<!-- </div> -->
+					<div class="main_search_box_result scrollbar-inner">
 						<ul class="list-group list-group-flush" id="main_search_box_list">
 							<!-- <li class="list-group-item">BAPPasdasdsasadadasdasdasd</li>
 							<li class="list-group-item">BAPPasdasdsasadadasdasdasd</li> -->
@@ -20,19 +23,20 @@
 					</div>
 				</div>
 			</div>
+
 		</form>
-		<!-- User -->
-		<ul class="navbar-nav align-items-center d-none d-md-flex">
+		 <!-- User -->
+	  <ul class="navbar-nav align-items-center d-none d-md-flex">
 			<li class="nav-item dropdown">
 				<a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
 					aria-expanded="false">
 					<div class="media align-items-center">
 						<span class="avatar avatar-sm rounded-circle">
-							<img alt="Image placeholder" src="<?=base_url()?>assets/images/appicon.png">
+							<img alt="Image placeholder" src="<?=base_url()?>assets/images/appicon-white.png">
 						</span>
 						<div class="media-body ml-2 d-none d-lg-block">
-							<span
-								class="mb-0 text-sm  font-weight-bold"><?=$this->user_data->first_name . " " . $this->user_data->last_name?></span>
+							<span class="mb-0 text-sm  font-weight-bold">
+								<?=$this->user_data->first_name . " " . $this->user_data->last_name?></span>
 						</div>
 					</div>
 				</a>
@@ -40,13 +44,13 @@
 					<div class=" dropdown-header noti-title">
 						<h6 class="text-overflow m-0">Welcome!</h6>
 					</div>
-					<!-- <a href="./examples/profile.html" class="dropdown-item">
+					<a href="./examples/profile.html" class="dropdown-item">
             <i class="ni ni-single-02"></i>
             <span>My profile</span>
             </a>
             <a href="./examples/profile.html" class="dropdown-item">
             <i class="ni ni-settings-gear-65"></i>
-            <span>Settings</span>
+            <span>Settings</span> 
             </a>
             <a href="./examples/profile.html" class="dropdown-item">
             <i class="ni ni-calendar-grid-58"></i>
@@ -55,7 +59,7 @@
             <a href="./examples/profile.html" class="dropdown-item">
             <i class="ni ni-support-16"></i>
             <span>Support</span>
-            </a> -->
+            </a> 
 					<div class="dropdown-divider"></div>
 					<a href="<?=base_url("login/logout")?>" class="dropdown-item">
 						<i class="ni ni-user-run"></i>
@@ -64,5 +68,5 @@
 				</div>
 			</li>
 		</ul>
-	</div>
+	</div> 
 </nav>

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="BAExpress Admin">
   <meta name="author" content="Cedrick Dayangco">
-  <title>BAExpress Adminstrator</title>
+  <title>BAE | Shopify</title>
 
   <!-- Favicons -->
   <!-- <link href="img/favicon.png" rel="icon"> -->

@@ -3,7 +3,7 @@
 		<div class="row align-items-center justify-content-xl-between">
 			<div class="col-xl-6">
 				<div class="copyright text-center text-xl-left text-muted">
-					&copy; 2019 Black Arrow Express</a>
+					&copy; 2020 Black Arrow Express | Shopify</a>
 				</div>
 			</div>
 			<div class="col-xl-6">

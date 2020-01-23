@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="BAExpress Admin">
   <meta name="author" content="Cedrick Dayangco">
-  <title>BAExpress | Login</title>
+  <title>BAE Shopify | Login</title>
   <!-- Favicon -->
   <link href="<?=base_url()?>assets/images/ico/ms-icon-144x144.png" rel="icon" type="image/png">
   <!-- Fonts -->
@@ -18,9 +18,9 @@
   <link href="<?=$theme_dir?>vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
   <!-- Argon CSS -->
   <link type="text/css" href="<?=$theme_dir?>css/argon.css?v=1.0.0" rel="stylesheet">
-  <style>
+  <!-- <style>
     .animate {
-    animation: bounce 1s infinite alternate;
+    animation: bounce 2s infinite alternate;
     -webkit-animation: bounce 1s infinite alternate;
     }
     @keyframes bounce {
@@ -39,18 +39,19 @@
         transform: translateY(-15px);
       }
     }
-  </style>
+  </style> -->
 </head>
 
-<body class="bg-default">
+<body class="bg-secondary">
   <div class="main-content">
     <!-- Header -->
-    <div class="header bg-gradient-danger py-5 py-lg-5">
+    <div class="header bg-gradient-success py-5 py-lg-8">
       <div class="container">
-        <div class="header-body text-center mb-2">
+        <div class="header-body text-center mb-0">
           <div class="row justify-content-center">
-            <div class="col-lg-5 col-md-6">
-              <img src="<?=base_url()?>assets/images/rider.png" class="img img-fluid mt--7 animate">
+            
+            <div class="col-lg-5 col-md-5">
+              <img src="<?=base_url()?>assets/images/bae-shopify-logo1.png" class="img img-fluid mt--1 animate">
               <!-- <p class="text-lead text-light">Use these awesome forms to login or create new account in your project for free.</p> -->
             </div>
           </div>
@@ -58,21 +59,23 @@
       </div>
       <div class="separator separator-bottom separator-skew zindex-100">
         <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-          <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
+          <polygon class="fill-default" points=""></polygon>
         </svg>
       </div>
     </div>
     <!-- Page content -->
     <div class="container mt--8 pb-5">
       <div class="row justify-content-center">
+        
         <div class="col-lg-5 col-md-7">
-          <div class="card bg-secondary shadow border-0">
+          <div class="card bg-gradient shadow border-4">
             <div class="card-body px-lg-5 py-lg-5">
-              <h4 class="text-center">Sign In</h4>
+              <h4 class="text-left px-2">Sign In</h4>
               <?php
                 $attr   = array('autocomplete'=>'off',"id" => "login_form");
                 echo form_open('login/verify',$attr); 
               ?>
+             
                 <div class="form-group mb-3">
                   <div class="input-group input-group-alternative">
                     <div class="input-group-prepend">
@@ -95,16 +98,17 @@
                     <span class="text-muted">Remember me</span>
                   </label>
                 </div>
-                <div class="text-center">
-                  <button type="submit" class="btn btn-danger my-4">Sign in</button>
+                <div class="text-right">
+                  <button type="submit" class="btn btn-success my-4">Sign in</button>
                 </div>
               </form>
+
             </div>
           </div>
           <div class="row mt-3">
-            <div class="col-6">
+            <!-- <div class="col-6">
               <a href="#" class="text-light"><small>Forgot password?</small></a>
-            </div>
+            </div> -->
             <div class="col-6 text-right">
               <!-- <a href="#" class="text-light"><small>Create new account</small></a> -->
             </div>
