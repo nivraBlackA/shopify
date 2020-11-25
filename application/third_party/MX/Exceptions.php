@@ -1,6 +1,7 @@
 <?php
 // application/core/MY_Exceptions.php
-class MX_Exceptions extends CI_Exceptions {
+class MX_Exceptions extends CI_Exceptions
+{
 
     public $error_controller = 'error';
     public $error_method_404 = 'error_404';

@@ -455,6 +455,7 @@ class MX_Model
 		}
 	}
 	
+	
 	function count_records($table='',$conditions='',$like=FALSE)
 	{
 		if(!empty($conditions))

@@ -25,6 +25,7 @@ date_default_timezone_set('Asia/Manila');
 |
 */
 $config['base_url'] = "http://".$_SERVER['HTTP_HOST'].str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
+// $config['base_url'] = "http://".$_SERVER['HTTP_HOST'].str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME'])";
 $config['theme_dir'] = "templates";
 $config['theme'] = "default";
 
